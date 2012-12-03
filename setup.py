@@ -16,8 +16,8 @@ from glob import glob
 try:
     from nisext.sexts import package_check, get_comrec_build
 except ImportError:
-    raise RuntimeError('Need nisext package from nibabel installation'
-                       ' - please install nibabel first')
+    print 'WARNING: Need nisext package from nibabel installation'
+    ' - please install nibabel first'
 
 from build_docs import cmdclass, INFO_VARS
 
